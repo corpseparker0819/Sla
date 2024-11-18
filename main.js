@@ -65,7 +65,9 @@ const video = {
 
 yesButton.addEventListener('click', () => {
   video.handleVideoInit();
-  launchHeartsConfetti();
+  setTimeout(() => {
+    window.location.href = "https://forms.gle/412e3GdMVJaVE49e7";
+  }, 2000);
 });
 
 noButton.addEventListener('mouseover', () => {
