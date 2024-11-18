@@ -1,6 +1,5 @@
 const yesButton = document.getElementById('yes-button');
 const noButton = document.getElementById('no-button');
-const videoBackdrop = document.getElementById('backdrop');
 const annotationContainer = document.querySelectorAll('.annotation');
 
 const randomizeButtonPosition = (buttonRef) => {
@@ -27,24 +26,24 @@ const launchHeartsConfetti = () => {
     startVelocity: 24,
     shapes: ["heart"],
     colors: [
-      "#c026d3",
-      "#9333ea",
-      "#7c3aed",
+      "#dc143c",
+      "#dc143c",
+      "#dc143c",
     ],
   };
-  
+
   confetti({
     ...confettiDefaults,
     particleCount: 50,
     scalar: 3,
   });
-  
+
   confetti({
     ...confettiDefaults,
     particleCount: 25,
     scalar: 2,
   });
-  
+
   confetti({
     ...confettiDefaults,
     particleCount: 10,
@@ -52,19 +51,8 @@ const launchHeartsConfetti = () => {
   });
 };
 
-const video = {
-  handleVideoInit: () => {
-    videoBackdrop.style.visibility = 'visible';
-    videoBackdrop.style.opacity = 1;
-  },
-  handleHideVideo: () => {
-    videoBackdrop.style.visibility = 'hidden';
-    videoBackdrop.style.opacity = 0;
-  }
-}
-
 yesButton.addEventListener('click', () => {
-  video.handleVideoInit();
+  launchHeartsConfetti();
   setTimeout(() => {
     window.location.href = "https://forms.gle/412e3GdMVJaVE49e7";
   }, 2000);
