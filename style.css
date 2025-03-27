@@ -19,9 +19,8 @@
 
 html {
   font-size: 62.5%;
-  /* 10px/16px = 62.5% -> 1rem = 10px */
   font-family: 'Roboto', sans-serif;
-  background: url('https://media1.tenor.com/m/s_JdRJo5JFUAAAAd/prepare-your-anus.gif') no-repeat center center fixed;
+  background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMbDfDnoUbYxCpe2QrYAqKxONI1iFcjVp43w&s') no-repeat center center fixed;
   background-size: cover;
   color: var(--text-light);
 }
