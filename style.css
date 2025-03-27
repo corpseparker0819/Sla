@@ -22,7 +22,7 @@ html {
   font-family: 'Roboto', sans-serif;
   height: 100%; /* Adicionando altura total ao HTML */
   background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMbDfDnoUbYxCpe2QrYAqKxONI1iFcjVp43w&s') no-repeat center center fixed;
-  background-size: cover;
+  background-size: contain;
   color: var(--text-light);
 }
 
